@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts, Text & Color in CSS</title>
+    <style>
+        h1 {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        /* .lorem {
+            width: 145px;
+            border: 2px solid black;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+        } */
+
+        .lorem {
+            border: 2px solid black;
+            width: 45px;
+            overflow: hidden;
+            word-break: keep-all;
+            text-overflow: ellipsis;
+        }
+
+        p {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-style: italic;
+            font-weight: 600;
+            /* text-decoration: underline;
+            text-decoration-color: yellowgreen;
+            text-decoration-style: wavy; */
+            text-decoration-thickness: 5px;
+            /* text-indent: 40px; */
+            /* text-indent is used to give extra spaces from the left. For only first line. */
+            color: red;
+        }
+
+        h2 {
+            text-transform: capitalize;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Fonts</h1>
+        <h2>about fonts</h2>
+        <p class="lorem">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet reiciendis neque, mollitia
+            rerum corporis fugiat quis consectetur, culpa quasi pariatur perspiciatis eius id aliquid commodi nemo
+            praesentium placeat aliquam sint dolores maxime? Reprehenderit, eligendi?</p>
+    </div>
+</body>
+
+</html>
