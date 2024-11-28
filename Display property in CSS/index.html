@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px
+        }
+
+        .box {
+            border: 2px solid blue;
+            /* block elements means that they will reserve then whole width of the screen, irrespective of their width. */
+            /* inline means, the element will take only requird width and also when the element is defined as inline than padding-top and margin-top properties don't apply. If we want the power of both we can than use inline-block. */
+        }
+
+        .box1 {
+            /* visibility: hidden; */
+            /* visibility hidden means that element is not visible on UI, but space is reserved for it and also in DOM we can see it. */
+            /* display: none; */
+            /* display none means space is not reserved and also this also dont remove element from DOM itself. */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box box1">
+        I am a box.
+    </div>
+
+    <div class="box">
+        I'am another box
+    </div>
+</body>
+
+</html>
