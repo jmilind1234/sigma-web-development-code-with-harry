@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions in CSS</title>
+    <style>
+        /* By default position value is static in CSS */
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .parent {
+            /* Exception - transform, filter, or perspective properties can also make an element appear as positioned */
+            padding: 43px;
+            margin: 34px;
+            border: 2px solid purple;
+        }
+
+        /* z-index, top, bottom, right and left can only be applied to elements when they are positioned any other than static */
+        .box1 {
+            background-color: aqua;
+            z-index: 10;
+            /* positioned to nearest positioned ancestor other than static positioned. */
+            /* position: absolute; */
+            position: sticky;
+            top: 0px;
+        }
+
+        .box2 {
+            background-color: azure;
+            position: relative;
+            top: 100px;
+            left: 50px;
+        }
+
+        .box3 {
+            background-color: antiquewhite;
+            /* means fixed relative to view port */
+            /* position: fixed;
+            bottom: 0px;
+            left: 25vw; */
+        }
+
+        .box4 {
+            background-color: purple;
+        }
+
+        .box {
+            border: 2px solid black;
+            height: 433px;
+            width: 80vw;
+            margin: 3px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="box box1"></div>
+        <div class="box box2"></div>
+        <div class="box box3"></div>
+        <div class="box box4"></div>
+    </div>
+</body>
+
+</html>
