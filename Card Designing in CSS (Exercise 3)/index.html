@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card designing in CSS</title>
+    <style>
+        .card {
+            position: relative;
+            border-radius: 10px;
+            border: 1px solid black;
+            width: 308px;
+            margin: auto;
+            box-sizing: border-box;
+        }
+
+        .img-container {
+            border-radius: 15px;
+            height: 180px;
+            width: 292px;
+            box-sizing: border-box;
+            border: 1px solid black;
+            margin: auto;
+            margin-top: 8px;
+        }
+
+        .card-img {
+            width: 100%;
+            border-radius: 15px;
+            height: 100%;
+        }
+
+        .categories {
+            width: 100%;
+            box-sizing: border-box;
+            height: auto;
+            padding-top: 5px;
+            padding-bottom: 5px;
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        .category {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: 0.78em;
+            display: inline;
+            margin-right: 5px;
+            color: grey;
+            padding: 2px 5px;
+            border-radius: 10px;
+            border: 1px solid grey
+        }
+
+        .nature {
+            margin-left: 20px;
+        }
+
+        .card-title {
+            width: 100%;
+            box-sizing: border-box;
+            padding-left: 15px;
+            font-size: 2em;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-weight: 500;
+            margin-bottom: 8px;
+        }
+
+        .card-description {
+            box-sizing: border-box;
+            padding-left: 15px;
+            line-height: 1.5;
+            color: grey;
+            margin-bottom: 8px;
+        }
+
+        #read-more {
+            color: rgb(80, 80, 246);
+            background-color: rgb(185, 185, 244);
+            padding: 10px 10px;
+            border-radius: 20px;
+            border: none;
+            margin: auto;
+            display: block;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="img-container">
+            <img src="image.jpg" class="card-img">
+        </div>
+        <div class="categories">
+            <div class="category nature">Nature</div>
+            <div class="category">Lake</div>
+        </div>
+        <div class="card-title">
+            Lago di Braies
+        </div>
+        <div class="card-description">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quidem aliquam facere
+            quia temporibus placeat? Corrupti vero possimus vitae?
+        </div>
+        <button id="read-more">Read More</button>
+    </div>
+</body>
+
+</html>
