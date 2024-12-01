@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables in CSS</title>
+    <style>
+        :root {
+            --color: blue;
+            --seccolor: rgb(189, 189, 252);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul li {
+            list-style: none;
+            padding: 34px;
+            margin: 34px
+        }
+
+        li {
+            color: var(--licolor)
+        }
+
+        ul {
+            display: flex;
+        }
+
+        .nav {
+            /* background-color: rgb(177, 241, 183); */
+            background-color: var(--color, blue);
+            /* here blue is fallback color, means if --color variable is not defined than it will take blue. */
+            --licolor: red;
+        }
+
+        .container {
+            /* background-color: rgb(137, 243, 148); */
+            background-color: var(--seccolor);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero, placeat. Sit esse, iure suscipit, quas maiores
+        eveniet beatae assumenda aliquid doloremque, vitae voluptatibus corporis! Repellat pariatur repudiandae
+        voluptatibus non expedita, sunt enim magni laborum laudantium, deserunt sint tempore nostrum voluptas, veritatis
+        unde? Sunt, beatae sapiente.
+    </div>
+</body>
+
+</html>
